@@ -23,6 +23,7 @@ RUN apk add --update --virtual .deps --no-cache gnupg && \
     && cd /opt/workspace \
     && terraform init \
     && cp -r .terraform/providers/* /opt/.providers-cache \
+    && mkdir -p /opt/.providers-cache/registry.opentofu.org \
     && cp -r /opt/.providers-cache/registry.terraform.io/* /opt/.providers-cache/registry.opentofu.org \
     && chmod -R 777 /opt/.providers-cache \
     && rm -rf .terraform \
