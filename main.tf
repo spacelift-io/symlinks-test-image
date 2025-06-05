@@ -2,16 +2,16 @@ terraform {
   required_providers {
     random = {
       source = "hashicorp/random"
-      version = "3.6.0"
+      version = "=3.6.0"
     }
 
     spacelift = {
       source = "spacelift-io/spacelift"
-      version = "1.19.1"
+      version = "=1.19.1"
     }
     null = {
       source = "hashicorp/null"
-      version = "3.2.4"
+      version = "=3.2.4"
     }
   }
 }
